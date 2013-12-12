@@ -1,0 +1,264 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+h1{
+	color:#e74c3c;
+	user-select:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+	color:white;
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+a:visited{
+	color: white;
+}
+
+body{
+	-moz-user-select: none;
+   	-webkit-user-select: none;
+    -ms-user-select: none;
+	overflow: hidden;
+	background: #fff;
+	font-family: 'Open Sans',sans-serif;
+	background-size: cover;
+}
+
+
+#header{
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	box-shadow: 1px 1px #eee;
+	background:white;
+	height: 100%;
+}
+
+#header h1{
+	padding: 10px;
+	text-align: center;
+	color: #e74c3c;
+	font-size: 20px;
+	height: 30px;
+	border-bottom:1px solid #eee;
+}
+
+.ui-navbar{
+	width: 100%;
+	height: 30px;
+	padding-bottom: 10px;
+	margin-top: 4px;
+}
+.ui-navbar ul{
+	width: 100%;
+	min-width: 220px;
+	height: 30px;
+	margin: auto;
+	list-style: none;
+}
+
+.ui-navbar ul li{
+	width:33%;
+	float: left;
+	text-align: center;
+}
+.ui-navbar ul li img{
+	text-align: center;
+}
+
+.ui-navbar ul li:nth-child(n+2){
+	border-left: 1px  solid #eee;
+}
+
+.active_tab{
+	border-bottom:3px solid #e74c3c;
+}
+
+
+.page{
+	width: 90%;
+	padding: 5%;
+	
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+}
+
+.info h1{
+	margin: 4px;
+	font-size: 26px;
+}
+.info p{
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+.btn {
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background: transparent;
+  border:1px solid #fff;
+  padding: 6px;
+  height: 20px;
+  width: 32%;
+  transition:0.2s all;
+  margin-top: 20px;
+  position: absolute;
+  text-align: center;
+}
+
+.btn:hover{
+	border:none;
+	transition:0.2s all;
+	background: #e74c3c;
+  	text-decoration: none;
+}
+
+.form_txt{
+	text-transform: uppercase;
+	color: white;
+	text-align:center;
+	font-size: 14px;
+	margin: 4px;
+}
+
+input{
+	margin-left:8%;
+	margin-right: auto;
+	width: 80%;
+	height: 25px;
+	border-radius: 2px;
+	background: #fff;
+	border:none;
+	outline: none;
+	padding-left:10px;
+	text-align: center;
+	font-family: 'Open Sans';
+	transition:0.3s all;
+}
+input:hover{
+	background:#f1f1f1;
+	transition:0.3s all;
+	
+}
+
+#map{
+	width: 100%;
+	height: 100%;
+	top:0px;
+	position: absolute;
+	z-index: -10000;
+	display: none;
+
+}
+
+.img_profile{width:29%;margin: auto;}
+.img_profile img{
+	border-radius: 100px;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	box-shadow: 1px 1px 1px rgba(80, 80, 80, 1);
+}
+.name_profile{text-align: center;
+	color: white;
+	font-size: 20px;
+	text-shadow: 1px 1px 2px rgba(80, 80, 80, 0.7);
+	font-weight: bold;
+}
+
+.adresse_profile{
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px rgba(80, 80, 80, .3);
+}
+
+.profile_infos{
+	width: 100%;
+	position: relative;
+	margin-top: 40px;
+	background:white;
+	box-shadow: 1px 1px 2px rgba(80, 80, 80, .3);
+	border-bottom:6px solid #e74c3c;
+}
+
+.profile_tab{
+	min-height: 30px;
+	padding: 4%;
+	width: 92%;
+	border-bottom: 1px solid #eee;
+}
+
+.profile_tab img{
+	height: 32px;
+	width: 32px;
+	float: left;
+}
+
+.profile_tab span{
+	width: 70%;
+	float: left;
+	font-size: 14px;
+	text-align: left;
+	color: #2c3e50;
+	padding-left: 10px;
+	padding-top: 4px;
+}
+
+#spread{
+	transition:all 0.4s;
+	width:0%;
+	position: absolute;
+	right: 0px;
+	height: 100%;
+	background:red;
+	z-index: 700000;
+}
