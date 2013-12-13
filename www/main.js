@@ -8,7 +8,7 @@ $(document).ready(function(){
 
                 $("#"+current_ui).hide();
                 var direction_ui = $(this).attr("data-href");
-                $("#"+direction_ui).show('slide');
+                $("#"+direction_ui).fadeIn('fast');
                 current_ui = direction_ui;
                 $(".ui-navbar li ").removeClass("active_tab");
                 $(this).addClass("active_tab");

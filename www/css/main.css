@@ -72,6 +72,7 @@ body{
 
 
 #header{
+	position: fixed;
 	width: 100%;
 	border-bottom: 1px solid #eee;
 	box-shadow: 1px 1px #eee;
@@ -195,11 +196,11 @@ input:hover{
 	position: absolute;
 }
 
-.img_profile{width:29%;margin: auto;}
+.img_profile{width:25%;margin: auto;}
 .img_profile img{
 	border-radius: 100px;
-	height: 100px;
-	width: 100px;
+	height: 100%;
+	width: 100%;
 	margin: auto;
 	box-shadow: 1px 1px 1px rgba(80, 80, 80, 1);
 }
@@ -218,6 +219,16 @@ input:hover{
 	text-shadow: 1px 1px 2px rgba(80, 80, 80, .3);
 }
 
+#head{
+	position: relative;
+	top:100px;
+	padding: 5%;
+	width: 90%;
+	height: 200px;
+	background:url(../img/backhead.jpg) ;
+	background-size: cover;
+}
+
 .profile_infos{
 	width: 100%;
 	position: relative;
@@ -231,8 +242,7 @@ input:hover{
 	position: absolute;
 	top:100px;
 	left: 0px;
-	padding: 4%;
-	width: 92%;
+	width: 100%;
 	display: none;
 	border-bottom: 1px solid #eee;
 }
