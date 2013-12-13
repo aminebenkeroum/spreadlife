@@ -17,11 +17,23 @@ $(document).ready(function(){
                         allowPageScroll:"vertical",
                          threshold:100
         });
+        
+        
 
-        panel.on("tap",function(){
+        $(".icon-menu").on("tap",function(){
+            if(position)
+            {
+                $(".contribute").fadeOut();
                 panel.css("width","0%");
                 position = false;
-        });
+            }
+            else
+            {
+                   panel.css("width","100%");
+                    $(".contribute").fadeIn();
+                    position = true;
+            }
+        })
 
         function swipeStatus(event, phase, direction, distance, fingers)
         {
@@ -31,11 +43,14 @@ $(document).ready(function(){
                 }
                 if(distance > 150)
                 {       panel.css("width","100%");
+                        $(".contribute").fadeIn();
                         position = true;
                 }
                 if(phase == "end" && distance < 150)
                 {
+                    $(".contribute").fadeOut();
                 	panel.css("width","0%");
+
                 }
 
         }

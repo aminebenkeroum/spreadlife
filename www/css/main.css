@@ -259,6 +259,49 @@ input:hover{
 	position: absolute;
 	right: 0px;
 	height: 100%;
-	background:red;
 	z-index: 700000;
+	background:blue;
 }
+
+.contribute{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.contribute p{
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	color:#2c3e50;
+	float: left;
+	width: 100%;
+	padding: 10px;
+	margin: auto;
+}
+.icon-menu{
+	position: absolute;
+	right:2%;
+	top:1%;
+}
+
+.contribute select{
+	font-family: 'Open Sans',sans-serif;
+	padding-left:20px; 
+	float: left;
+	border:none;
+	background:#eee;
+	width:100%;
+	margin-left: -10px;
+	border-bottom:1px solid #95a5a6;
+	height: 50px;
+}
+
+.contribute h1{
+	padding: 5%;
+	width: 90%;
+}
+
+.ui-loading .ui-loader { display: none; }
+
+.ui-btn-text{display: none;}

@@ -52,6 +52,7 @@
  
 .icon-phone:before { content: '\e804'; } /* '' */
 .icon-phone-squared:before { content: '\e803'; } /* '' */
+.icon-menu:before { content: '\e806'; } /* '' */
 .icon-tint:before { content: '\e802'; } /* '' */
 .icon-user:before { content: '\e800'; } /* '' */
 .icon-home:before { content: '\e801'; } /* '' */
