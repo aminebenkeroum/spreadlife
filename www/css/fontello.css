@@ -50,7 +50,7 @@
   
 }
  
-.icon-phone:before { content: '\e804'; } /* '' */
+.icon-phone:before { color:white; font-size:14px;content: '\e804'; } /* '' */
 .icon-phone-squared:before { content: '\e803'; } /* '' */
 .icon-menu:before { content: '\e806'; } /* '' */
 .icon-tint:before { content: '\e802'; } /* '' */

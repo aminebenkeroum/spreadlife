@@ -76,6 +76,7 @@ body{
 	width: 100%;
 	border-bottom: 1px solid #eee;
 	box-shadow: 1px 1px #eee;
+	max-height: 99px;
 	background:white;
 }
 
@@ -139,27 +140,6 @@ body{
 	font-size: 14px;
 }
 
-.btn {
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background: transparent;
-  border:1px solid #fff;
-  padding: 6px;
-  height: 20px;
-  width: 32%;
-  transition:0.2s all;
-  margin-top: 20px;
-  position: absolute;
-  text-align: center;
-}
-
-.btn:hover{
-	border:none;
-	transition:0.2s all;
-	background: #e74c3c;
-  	text-decoration: none;
-}
 
 .form_txt{
 	text-transform: uppercase;
@@ -169,19 +149,21 @@ body{
 	margin: 4px;
 }
 
-input{
-	margin-left:8%;
+input[type="text"] {
+	margin-left:auto;
 	margin-right: auto;
-	width: 80%;
-	height: 25px;
+	margin-top: 10px;
+	width: 100%;
+	height: 30px;
 	border-radius: 2px;
-	background: #fff;
+	background: #eee;
 	border:none;
 	outline: none;
-	padding-left:10px;
-	text-align: center;
-	font-family: 'Open Sans';
+	padding-left:20px;
+	float: left;
+	font-family: 'Open Sans',sans-serif;
 	transition:0.3s all;
+
 }
 input:hover{
 	background:#f1f1f1;
@@ -212,6 +194,13 @@ input:hover{
 }
 
 .adresse_profile{
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px rgba(80, 80, 80, .3);
+}
+.phone_profile{
 	text-align: center;
 	color: white;
 	font-size: 14px;
@@ -317,3 +306,102 @@ input:hover{
 .ui-btn-text{display: none;}
 
 div.ui-loader.ui-body-a{display: none;}
+
+#introduction {
+	
+}
+
+.info{
+	position: absolute;
+	top:99px;
+	width:80%;
+	text-align: center;
+	left: 5%;
+	padding: 5%;
+}
+
+.info p{
+	font-size: 13px;
+}
+.info h1{
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.btn{
+	background: #e74c3c;
+	padding: 10px;
+	text-align: center;
+	color:white;
+	text-transform: uppercase;
+	font-size: 12px;
+	width:100px;
+	height: 15px;
+	border-radius: 2px;
+	display: inline-block;
+	margin: 4px;
+	transition:background 0.5s;
+}
+
+.btn:hover{
+	background: #e74000;
+	transition:background 0.5s;
+}
+
+#body{
+	height: 150px;
+	float: left;
+	padding: 5%;
+	width: 90%;
+	position: relative;
+	top: 100px;
+	text-align: center;
+}
+
+#body h1{
+	text-transform: uppercase;
+}
+
+#type{
+	margin-top: 10px;
+	width:100%;
+	background: #9b59b6;
+	border-radius: 2px;
+	float: left;
+	color: white;
+}
+
+#rh{
+	margin-top: 10px;
+	float: left;
+	width:100%;
+	border-radius: 2px;
+	color: white;
+	background: #2ecc71;
+}
+
+.types{
+	padding: 5%;
+	float: left;
+	width:15%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.rhs{
+	padding: 5%;
+	width:40%;
+	text-align: center;
+	text-transform: uppercase;
+	float: left;
+}
+
+
+.activerh{
+	background: #27ae60;
+}
+
+.activet{
+	background: #8e44ad;
+}
