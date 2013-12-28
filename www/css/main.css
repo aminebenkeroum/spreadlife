@@ -178,7 +178,7 @@ input:hover{
 	position: absolute;
 }
 
-.img_profile{width:25%;margin: auto;}
+.img_profile{width:80px;margin: auto;}
 .img_profile img{
 	border-radius: 100px;
 	height: 100%;
